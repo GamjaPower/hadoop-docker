@@ -15,9 +15,9 @@ A docker microservice ecosystem for a baseline Hadoop 2.0 cluster.
 Prepare cluster:
 ```sh
 > docker network create -d bridge hadoop
+> docker-compose build (이미지 빌드를 해줘야 아래 커맨드를 실행할 수 있다.)
 > docker-compose run namenode format.sh
 ```
-*NOTE: this step should build the base and daemon images if you have not already*
 
 Start cluster:
 ```sh
