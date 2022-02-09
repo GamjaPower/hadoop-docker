@@ -2,7 +2,8 @@ ARG BASE_OS=centos
 FROM ${BASE_OS}
 
 ARG BASE_OS=centos
-ARG HADOOP_VER=2.9.2
+#ARG HADOOP_VER=2.10.1
+ARG HADOOP_VER=2.0.0-alpha
 ARG JAVA_VER=8
  
 # Create Hadoop user

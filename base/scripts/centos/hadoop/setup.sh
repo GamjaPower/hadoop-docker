@@ -5,7 +5,8 @@ DEST=$2
 USER=$3
 
 echo "========== DOWNLOADING HADOOP ($HADOOP_VER)=========="
-curl -o hadoop.tar.gz http://apache.cs.utah.edu/hadoop/common/hadoop-${HADOOP_VER}/hadoop-${HADOOP_VER}.tar.gz
+#curl -o hadoop.tar.gz http://apache.cs.utah.edu/hadoop/common/hadoop-${HADOOP_VER}/hadoop-${HADOOP_VER}.tar.gz
+curl -o hadoop.tar.gz https://archive.apache.org/dist/hadoop/core/hadoop-${HADOOP_VER}/hadoop-${HADOOP_VER}.tar.gz
 
 echo "========== UNPACKING HADOOP ($HADOOP_VER)=========="
 mkdir -p $DEST
